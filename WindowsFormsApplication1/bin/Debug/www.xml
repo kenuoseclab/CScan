@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--提取自http://www.dvwa.com:8888/xss1/level1.php?name=admin的超链接-->
+<root root="URL描述">
+  <url url="http://www.dvwa.com:8888/xss1/level1.php?name=admin2019/6/13 10:08:23" />
+</root>
