@@ -8,7 +8,7 @@
 URL解析中利用正则表达式匹配出主域名，之后进行网址爬取的时候，就以这个主域名为限制，不属于主域名的网址删掉，在网页下载用HttpWEBResponse方法进行接收，接收下来的网页进行分析，解析漏洞可疑点分为两种，一种可疑点是在URL中，一种在HTML中，注入点可能存在URL中，也可能在Form表单中，所以要对这两个可疑点进行分析，将提取的信息和URL进行保存，以待Payload生成使用。\
 XSS Payload生成使用多线程，XSS Payload模块框架图如图1-2所示，在爬虫模块中提取的可疑漏洞点在这就用到了。\
 先根据可疑点分析注入点类型，注入点类型分为GET和POST，一般通过URL传参就是GET，表单一般都是用POST传参，在构造 Payload时，URL中的可疑漏洞的分析分为：第一种是直接在后面加攻击语句，第二种是通过正则表达式替换参数的值。表单要对表单数据进行分析，提取表单参数进行赋值，这些值都是攻击语句。攻击语句是收集的常用攻击语句以及它们的变种，包括：标签闭合、随机大小写、特殊字符嵌入、HTML实体编码、BASE64编码、Unicode编码、UTF编码、16进制编码等等。\
-![maze](https://https://github.com/chain312/WindowsFormsApplication1/image/x.png)
+![abc](https://https://github.com/chain312/WindowsFormsApplication1/image/x.png)
 图1-2 XSS Payload生成模块总体设计图
 由于检测的漏洞不同，相同漏洞间的产生原理也不同，所以漏洞检测验证模块也并不相同，但大致步骤都相同，都会有Payload发送、漏洞分析和漏洞验证等模块，漏洞检测和验证流程如图4-7所示。
 
