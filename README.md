@@ -1,4 +1,4 @@
-<p align="center">《基于网络爬虫的漏洞检测系统》</p>
+《基于网络爬虫的漏洞检测系统》
 ====
 # 1.1系统功能介绍 
 	
@@ -11,7 +11,7 @@ XSS Payload生成使用多线程，XSS Payload模块框架图如图1-2所示，�
 先根据可疑点分析注入点类型，注入点类型分为GET和POST，一般通过URL传参就是GET，表单一般都是用POST传参，在构造 Payload时，URL中的可疑漏洞的分析分为：>第一种是直接在后面加攻击语句，第二种是通过正则表达式替换参数的值。表单要对表单数据进行分析，提取表单参数进行赋值，这些值都是攻击语句。攻击语句是收集的常用攻击语句以及它们的变种，包括：标签闭合、随机大小写、特殊字符嵌入、HTML实体编码、BASE64编码、Unicode编码、UTF编码、16进制编码等等。
  <div align=center><img width="655" height="361" src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片1.png"/></div>
                    
-图1-2 XSS Payload生成模块总体设计图\
+<p align="center">图1-2 XSS Payload生成模块总体设计图</p>
 由于检测的漏洞不同，相同漏洞间的产生原理也不同，所以漏洞检测验证模块也并不相同，但大致步骤都相同，都会有Payload发送、漏洞分析和漏洞验证等模块，漏洞检测和验证流程如图1-3所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片2.png"/></div>
 图1-3 XSS漏洞测试和漏洞验证流程图
