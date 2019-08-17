@@ -1,6 +1,6 @@
 《基于网络爬虫的漏洞检测系统》
 ====
-#1.1系统功能介绍 
+# 1.1系统功能介绍 
 	
 该系统的主要功能有网站网络爬虫、漏洞测试、漏洞验证、生成报告、发送报告到指定邮箱、使用帮助、常见漏洞学习、扫描排错、扫描历史浏览等。\
 网络爬虫模块是该系统第一个模块，这个模块对于该系统进行漏洞检测至关重要，因为其他模块都是建立在这个模块之上。\
@@ -22,7 +22,7 @@ XSS Payload生成使用多线程，XSS Payload模块框架图如图1-2所示，�
 漏洞知识库主要针对，对于漏洞不熟悉的使用者，使用者可以通过查看漏洞知识库进行熟悉漏洞知识，还有一个模块为排错模块，如果在使用者遇到问题，可以通过查看此模块进行快速排错。系统使用时可以查看的文档帮助和视频帮助。文档帮助还是使用CHM文件，在CHM文档中为系统的使用流程，而视频帮助是基于网络爬虫的漏洞检测系统使用的一个小例子，可以通过这个小例子让使用者快速上手使用该系统进行漏洞扫描的工作。  
 帮助模块此模块设计的意义在于如果在用户使用期间出现不可解决的问题或者有其他的需求可以联系开发人员进行反馈，以保证项目朝着贴合渗透的方向进行，加上这个模块不仅对系统使用人员有帮助，可以帮助使用人员进行排错，这对于项目的改进属于正反馈，引导项目的发展方向，当检测中断时可以进行排错。
 
-#1.2系统主界面  
+# 1.2系统主界面  
 系统预加载页面，如下图1-4所示。  
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片3.png"/></div>
 
@@ -33,17 +33,17 @@ XSS Payload生成使用多线程，XSS Payload模块框架图如图1-2所示，�
 
 扫描配置模块主要包括：扫描URL设置，如果网站需要登陆要设置Cookie，设置Cookie的步骤为在浏览器登陆网站，点击开发者工具，点击网络，然后刷新网页，在Cookie选项中，将Cookie复制过来，在扫描前还需要进行扫描漏洞类型选择，这个漏洞类型默认为只进行XSS扫描，所以如果要进行SQL漏洞的扫描，要将两个类型都选上。
 
-#2.1功能模块
+# 2.1功能模块
 系统功能模块如图2-1所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片5.png"/></div>
 图2-1系统功能模块图
 
-#2.2业务流程
+# 2.2业务流程
 在使用该系统前，需要对该系统的设计流程做个了解，设计流程图如图2-2所示。开始使用时，可以对漏洞知识进行梳理，由用户指定扫描URL和扫描漏洞类型以及扫描完成报告发送邮箱等设置，还需要查看扫描网站是否需要登陆，如需登陆可以先登陆网站，在浏览器的开发者工具中，可以找到网络选项里的Cookie，获取登陆后的Cookie后，在系统中选择“需要Cookie”选项，输入Cookie的值，浏览器中的Cookie可以复制粘贴，这样也有利于用户操作，然后再进行最后的负荷配置，这个负荷配置是加载Payload语句，在系统中以字典的形式存在，如果需要配置用户精心构造的Payload，可以从自己本地进行加载，开始扫描后判断之前的设置是否是一键式的，然后就可以进行扫描了，扫描后会根据扫描前的配置生成扫描报告和修复建议，如果配置为一键式则可以自动生成报告和发送报告到指定邮箱。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片6.png"/></div>
 图2-2 设计流程图
 
-#2.3系统架构
+# 2.3系统架构
 
 系统框架图如图2-3所示
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片7.png"/></div>
@@ -55,7 +55,7 @@ XSS Payload生成使用多线程，XSS Payload模块框架图如图1-2所示，�
 
 在系统中还需要使用多线程来解决窗体“假死”。进程是Windows系统中的一个概念，它包含着的资源是运行程序所需要。一个正在运行的应用程序，在操作系统中看作一个进程，一个进程由一个或者多个线程组成。一个进程中的多个线程可以同时运行，进程之间是相对独立的，一个进程无法进行访问另一个进程的数据。在进行Winform程序开发时，往往需要数据的处理，但是如果数据比较大或者处理过程比较复杂，会需要一定的时间，如果在这段时间内界面不能操作或者没有实时更新，会产生程序“假死”，用户以为程序卡死，而导致不好的用户体验。所以在大量数据操作的应用上，需要使用多线程来处理这种情况。
 
-#2.4系统部署
+# 2.4系统部署
 
 在系统进行使用时可以有两种方式进行，一种是在系统的局域网内通过对WEB应用的直接访问进行扫描，这种方式，如图2-4部署图的用户A所示。
 
@@ -64,9 +64,9 @@ XSS Payload生成使用多线程，XSS Payload模块框架图如图1-2所示，�
 
 用户A通过本地网络对服务器进行扫描，这种方式是一种旁路的方式，部署简单，只需要安装在局域网的一台计算机上，或者将安装有该系统的计算机接入局域网即可进行扫描，这种方式对本地未上线应用和本地上线应用效果相同，第二种方式是通过网络对WEB应用进行扫描，但这时需要WEB服务器解入Internet，即在局域网外部可以对WEB服务器进行访问，如图4-2部署图的用户B所示，这种情况对于未上线的应用无效，未上线的应用需要在本地环境进行测试。
 
-#2.5漏洞可能点爬取
+# 2.5漏洞可能点爬取
 
-##2.5.1网络爬虫模块
+## 2.5.1网络爬虫模块
 
 网络爬虫模块是该系统第一个模块，这个模块对于该系统进行漏洞检测至关重要，因为其他模块都是建立在这个模块之上，爬虫流程图如图2-5所示。这个模块的效率影响着整个漏洞检测的总体时间，不仅仅是因为它是该系统的第一个模块，还是因为漏洞验证在发包时用的也是这个模块，在漏洞爬取策略中，讨论了使用的爬取策略算法，因为深度优先算法不好实现加使用驻留内存大等缺点，所以该系统采用广度优先算法进行爬取。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片9.png"/></div>
@@ -113,7 +113,7 @@ URL解析中利用正则表达式匹配出主域名，之后进行网址爬取�
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片16.png"/></div>
 图2-12　XSS扫描完成图
 
-##2.5.2XSS Payload生成
+## 2.5.2XSS Payload生成
 
 XSS Payload生成使用多线程，XSS Payload模块框架图如图2-13所示，在爬虫模块中提取的可疑漏洞点在这就用到了。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片17.png"/></div>
@@ -121,7 +121,7 @@ XSS Payload生成使用多线程，XSS Payload模块框架图如图2-13所示，
 
 先根据可疑点分析注入点类型，注入点类型分为GET和POST，一般通过URL传参就是GET，表单一般都是用POST传参，在构造 Payload时，URL中的可疑漏洞的分析分为：第一种是直接在后面加攻击语句，第二种是通过正则表达式替换参数的值。表单要对表单数据进行分析，提取表单参数进行赋值，这些值都是攻击语句。攻击语句是收集的常用攻击语句以及它们的变种，包括：标签闭合、随机大小写、特殊字符嵌入、HTML实体编码、BASE64编码、Unicode编码、UTF编码、16进制编码等等。
 
-##2.5.3SQL注入Payload生成模块
+## 2.5.3SQL注入Payload生成模块
 
 SQL注入属于服务端应用安全，也是安全领域中最常见的攻击方式之一，如果说XSS是针对HTML的注入，那么SQL注入就是针对数据库的注入SQL注入的，Payload有相似之处，但攻击语句生成不同，SQL注入Payload可以分为有回显和无回显，但不管是基于时间的盲注还是基于布尔的盲注，Payload是在有回显的基础上生产的，所谓盲注就是，服务器关闭了错误回显，服务器没有回显，对于攻击者就缺少了非常重要的调试信息，所以盲注要比一般注入难度高，目前网络上现存的SQL注入大多为盲注，但是攻击者必须想办法知道注入是否成功，构造的语句是否有错误，所以就有了盲注技术。手工盲注过程一般是第一步判断是否存在注入，判断存在注入点后要判断注入类型，第二步是猜解当前数据表中的列数通，常用order by语句进行，第三步根据字段数猜解列名，第四步根据列名猜解数据，第五步查看是否能进行命令执行，写入Webshell进行提权操作，下一步是进行横向渗透或者纵向渗透。所以SQL注入Payload生成框架图如2-14所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片18.png"/></div>
@@ -137,9 +137,9 @@ SQL注入按照数据提交方式进行分类可以分为：GET注入、POST注�
 
 SQL注入检测和XSS漏洞检测有稍微的不同，因为在手工进行SQL注入时，要根据返回的提示信息进行测试，所以在每进行一步，就要进行回包分析，根据回包决定下一步发送的数据包，如果在基于时间的盲注中，数据包回复的时间不对，则考虑利用其他Payload，这个过程是个相互反馈，相互促进的过程，在漏洞检测中需要对Cookie的值进行分析，GET参数进行分析，对HTTP的头进行分析，对表单的值进行分析，分析后进行替换和发包。
 
-#2.6漏洞检测攻击语句加载
+# 2.6漏洞检测攻击语句加载
 
-##2.6.1系统默认
+## 2.6.1系统默认
 
 系统默认的Payload是写在系统。如图2-16所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片20.png"/></div>
@@ -149,7 +149,7 @@ SQL注入检测和XSS漏洞检测有稍微的不同，因为在手工进行SQL�
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片21.png"/></div>
 图2-17 XSS攻击匹配语句图
 
-##2.6.2本地加载
+## 2.6.2本地加载
 在系统主页面可以对攻击语句进行加载。如图2-18所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片22.png"/></div>
 图2-18 XSS攻击语句本地加载界面图
@@ -158,7 +158,7 @@ SQL注入检测和XSS漏洞检测有稍微的不同，因为在手工进行SQL�
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片23.png"/></div>
 2-19 字典加载图
 
-#2.7生成报告模块
+# 2.7生成报告模块
 
 2.7.1生成系统报告
 
@@ -178,7 +178,7 @@ SQL注入检测和XSS漏洞检测有稍微的不同，因为在手工进行SQL�
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片26.png"/></div>
 图2-23 报告图
 
-##2.7.2本地文档报告
+## 2.7.2本地文档报告
 
 在进行本地报告保存中，导在做导出的报告时，首先要建立一个Word模板，在保存报告时，需要建立模板，要在模板中使用特殊占位符进行占位， 通过操作读写Word模板进行本地报告生成，其生成本地报告流程如2-24所示，当然本地模板只需要一次制作即可，不需要用户自行制作模板。在制作本地模板过程中需要注意的是占位符要特殊，可以使用多个特殊字符进行拼接。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片27.png"/></div>
@@ -191,7 +191,7 @@ SQL注入检测和XSS漏洞检测有稍微的不同，因为在手工进行SQL�
 报告还可以保存到本地，在报告中有扫描人员姓名、扫描时间、扫描漏洞情况得分、扫描域名、还有在系统生产的图、修复建议、Payload、都能导入到文档中，导出文档主要用到的是Aspose插件进行的，在开发初期，使用的是另一个插件，但是由于它导出中文乱码的原因，所以就实现过程中换了一个插件。导出本地报告如图2-26所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片29.png"/></div>
 图2-26 导出报告图
-##2.7.3邮箱报告
+## 2.7.3邮箱报告
 邮件发送模块如图2-27所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片30.png"/></div>
 图2-27 邮件发送模块界面图
@@ -208,9 +208,9 @@ SQL注入检测和XSS漏洞检测有稍微的不同，因为在手工进行SQL�
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片33.png"/></div>
 图2-30 下半部分报告图
 
-#2.8帮助模块
+# 2.8帮助模块
 
-##2.8.1帮助模块
+## 2.8.1帮助模块
 
 帮助界面如图2-31所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片34.png"/></div>
@@ -229,7 +229,7 @@ SQL注入检测和XSS漏洞检测有稍微的不同，因为在手工进行SQL�
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片37.png"/></div>
 图2-33 视频帮助模块图
 
-##2.8.2漏洞知识库模块
+## 2.8.2漏洞知识库模块
 漏洞知识库模块如图2-33所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片38.png"/></div>
 图2-33 漏洞知识库模块图
