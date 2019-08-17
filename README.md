@@ -166,13 +166,9 @@
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片23.png"/></div>
 <p align="center">图2-20 生成报告流程图</p>
 
-&#8195;&#8195;扫描完成如图2-21所示，点击报告即可查看报告。
-<div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片24.png"/></div>
-<p align="center">图2-21 扫描完成图</p>
-
 &#8195;&#8195;在报告生成模块，首先对扫描到的漏洞Payload进行记录，以便进行验证，再对扫到的漏洞做出修复建议，这些建议都是参考对应漏洞的常规修复方法，示例如图2-22所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片25.png"/></div>
-<p align="center">图2-22 修复建议图</p>
+<p align="center">图2-21 修复建议图</p>
 
 &#8195;&#8195;在开始还会根据Payload进行记录，对漏洞情况做一个简单的分析，然后再根据数据生成图表，使得报告更加美观直接。在报告中会根据网站漏洞做出一个评分，报告如图2-23所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片26.png"/></div>
@@ -192,6 +188,7 @@
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片29.png"/></div>
 <p align="center">图2-26 导出报告图</p>
 ## 2.7.3邮箱报告
+
 &#8195;&#8195;邮件发送模块如图2-27所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片30.png"/></div>
 <p align="center">图2-27 邮件发送模块界面图</p>
@@ -234,6 +231,4 @@
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片38.png"/></div>
 <p align="center">图2-33 漏洞知识库模块图</p>
 
-&#8195;&#8195;在主页面中还有一个模块，为开发人员的介绍模块，在这个模块介绍了开发人员的基本信息，包括开发人员姓名、所属单位、电话、住址等信息。开发人员介绍如图2-34所示。
-<div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片39.png"/></div>
-<p align="center">图2-34 开发人员介绍图</p>
+&#8195;&#8195;在主页面中还有一个模块，为开发人员的介绍模块，在这个模块介绍了开发人员的基本信息，包括开发人员姓名、所属单位、电话、住址等信息。
