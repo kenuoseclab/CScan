@@ -33,6 +33,14 @@
 
 &#8195;&#8195;扫描配置模块主要包括：扫描URL设置，如果网站需要登陆要设置Cookie，设置Cookie的步骤为在浏览器登陆网站，点击开发者工具，点击网络，然后刷新网页，在Cookie选项中，将Cookie复制过来，在扫描前还需要进行扫描漏洞类型选择，这个漏洞类型默认为只进行XSS扫描，所以如果要进行SQL漏洞的扫描，要将两个类型都选上。
 
+# 1.3开发环境
+
+开发软件：Visual studio 2012
+
+使用框架：Winform+Devexpress 15.6
+
+操作word插件：Aspose
+
 # 2.1功能模块
 &#8195;&#8195;系统功能模块如图2-1所示。
 <div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片5.png"/></div>
