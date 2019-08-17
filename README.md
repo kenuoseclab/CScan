@@ -12,7 +12,7 @@
                    
 >图1-2 XSS Payload生成模块总体设计图\
 >由于检测的漏洞不同，相同漏洞间的产生原理也不同，所以漏洞检测验证模块也并不相同，但大致步骤都相同，都会有Payload发送、漏洞分析和漏洞验证等模块，漏洞检测和验证流程如图1-3所示。
-![abc](https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片2.png)\
+<div align=center><img src="https://github.com/chain312/CScan/blob/master/WindowsFormsApplication1/image/图片2.png"/></div>
 >图1-3 XSS漏洞测试和漏洞验证流程图\
 在该系统中检测过程也是通过类似于爬虫模块进行的，将构造的Payload通过数据包发送出去，当然在发送的时候也要考虑到Cookie的问题，因为有些网站需要登陆才能进行爬取，在XSS漏洞检测时，该系统用的方法是，在开始检测前对攻击语句字典进行分析，会根据检测前的语句进行分析、如编码分析、闭合分析、弹窗分析等。
 将如果分析后的语句写入另一个字典称为漏洞比对字典，当进行返回数据包检测时，通过攻击语句和漏洞比对字典进行一一对比，如果比对出来了，就发送给漏洞验证模块进行下一步验证，漏洞验证模块使用C#调用Selenium+phantomJS框架模拟浏览器，但是这个时候需人工进行验证。在SQL注入模块验证时，如果扫描出数据就记录Payload，这个Payload也需要人工进行验证。
